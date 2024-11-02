@@ -1,0 +1,62 @@
+.home-container {
+    position: relative;
+    height: calc(100vh - 50px); /* Set height to viewport height minus the navbar height */
+    overflow: hidden;            /* Hide overflow to prevent scrolling */
+
+}
+.list-container {
+    margin-top: 50px;
+    position: relative;
+    height: calc(100vh - 50px); /* Set height to viewport height minus the navbar height */
+
+
+}
+.info {
+    position: absolute;
+    width: 100%;
+}
+
+.info h1{
+    font-size: 75px;
+    text-align: left;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.info-item {
+    width: 100%;
+}
+.hbox {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    width: 100%; /* Full width of the parent */
+    box-sizing: border-box; /* Include padding and border in width calculations */
+    padding-left: 50px; /* Example padding on the left */
+    padding-right: 50px;
+    padding-bottom: 5px;
+    align-items: flex-start;
+}
+
+.heading {
+    margin: 0; /* Remove default margin */
+    font-size: 32px;
+}
+.subheading {
+    margin: 0; /* Remove default margin */
+    font-size: 22px;
+    color: #5B3A29; /* Apply color only to headings and paragraphs */
+}
+
+.list {
+    margin-top: 0;
+    margin-left: 60px;
+    padding-right: 50px;
+}
+
+.list li {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.bottom-spacer {
+    height: 50px;
+}

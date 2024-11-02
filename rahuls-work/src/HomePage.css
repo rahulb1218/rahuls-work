@@ -1,0 +1,85 @@
+.home-container {
+  position: relative;
+  /* height: calc(100vh - 50px);  */
+  height: 100vh;
+  overflow: hidden;  
+  opacity: 1;
+  transition: opacity 1s ease-in-out;          /* Hide overflow to prevent scrolling */
+}
+.home-container.fade-out {
+  opacity: 0;
+}
+.button-container {
+  margin-top: 30px;
+}
+
+.home-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007BFF;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+.name {
+  position: absolute;
+  bottom: 64px; /* Adjust if needed to sit above the floor */
+  left: 0;
+  margin: 0;
+  margin-left: 50px;
+}
+.name h1{
+  font-size: 100px;
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+.name p{
+  font-size: 40px;
+  text-align: left;
+
+}
+
+.home-floor {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 64px; /* Desired height of the floor */
+  background-image: url('Assets/Terrain/dirt.png');
+  background-repeat: repeat-x;
+  background-size: 64px 64px; /* Scale the image height to 64px */
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2a);
+}
+
+.floor {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px; /* Desired height of the floor */
+  background-image: url('Assets/Terrain/dirt.png');
+  background-repeat: repeat-x;
+  background-size: 64px 64px; /* Scale the image height to 64px */
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.platform {
+  position: absolute;
+  width: 100%;
+  height: 64px; /* Desired height of the floor */
+  background-image: url('Assets/Terrain/brick.png');
+  background-repeat: repeat-x;
+  background-size: 64px 64px; /* Scale the image height to 64px */
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+  

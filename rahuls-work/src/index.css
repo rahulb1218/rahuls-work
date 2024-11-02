@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'ARCADECLASSIC';
+  src: url('Assets/ARCADECLASSIC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url('Assets/Background/Green.png');
+  background-repeat: repeat;
+  background-size: 50px 50px;
+  margin: 0;
+  padding: 0;
+  font-family: 'ARCADECLASSIC', sans-serif;
+  letter-spacing: 2px;
+}
+h1, h2, h3, p, li {
+  color: #5B3A29; /* Apply color only to headings and paragraphs */
+  margin: 0;
+}
+
+@keyframes backgroundScroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
